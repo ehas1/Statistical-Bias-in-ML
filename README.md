@@ -1,8 +1,8 @@
 # Statistical-Bias-in-ML
 A deeper dive on statistical bias within black-box models using interpretability tools and fairness metrics.
 
-**Authors:** Eric Haslam, Jack Cook, Zachary M. Boyd, Alice C. Schwarze  
-**Date:** April 2025  
+**Authors:** Eric Haslam, Jack Cook, Dr. Zachary M. Boyd, Dr. Alice C. Schwarze  
+**Date:** June 2025  
 
 ---
 
