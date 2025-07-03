@@ -24,5 +24,8 @@ This repository contains code and documentation for our study on interpretabilit
 
 ---
 
+## How to Navigate
+
+The main file to use before the rest is OAIP_skeleton
 
 
