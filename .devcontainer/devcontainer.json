@@ -1,6 +1,6 @@
 // .devcontainer/devcontainer.json
 {
-  "name": "Bias‑in‑ML DevContainer",
+  "name": "Statistical-Bias‑in‑ML DevContainer",
   "dockerFile": "Dockerfile",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
