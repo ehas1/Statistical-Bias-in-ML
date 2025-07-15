@@ -1,0 +1,10 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "Bias‑in‑ML DevContainer",
+  "dockerFile": "Dockerfile",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "pip install -r requirements.txt && pip install dvc[gdrive] && dvc pull",
+  "forwardPorts": [8888]
+}
