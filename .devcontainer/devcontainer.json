@@ -2,8 +2,9 @@
 {
   "name": "Statistical-Bias‑in‑ML DevContainer",
   "dockerFile": "Dockerfile",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
   "postCreateCommand": "pip install -r requirements.txt && pip install dvc[gdrive] && dvc pull",
   "forwardPorts": [8888]
