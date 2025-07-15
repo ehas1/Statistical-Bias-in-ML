@@ -1,7 +1,6 @@
 // .devcontainer/devcontainer.json
 {
   "name": "Statistical-Bias‑in‑ML DevContainer",
-  "dockerFile": "Dockerfile",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
