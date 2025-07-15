@@ -1,0 +1,10 @@
+# .devcontainer/Dockerfile
+FROM mcr.microsoft.com/vscode/devcontainers/python:3.10
+
+# Install DVC with Google Drive support
+RUN pip install --no-cache-dir dvc[gdrive]
+
+# Copy repo in and install deps
+COPY . /workspace
+WORKDIR /workspace
+RUN pip install --no-cache-dir -r requirements.txt
