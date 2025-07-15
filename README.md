@@ -1,4 +1,4 @@
-# COMPAS Recidivism Analysis
+# Statistical Bias In ML
 
 This repository contains code for analyzing the COMPAS recidivism dataset using various machine learning models. The analysis includes decision trees, XGBoost, and neural networks, along with model interpretability using LIME and SHAP.
 
