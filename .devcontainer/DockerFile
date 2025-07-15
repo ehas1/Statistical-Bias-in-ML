@@ -1,10 +1,31 @@
-# .devcontainer/Dockerfile
-FROM mcr.microsoft.com/vscode/devcontainers/python:3.10
+FROM python:3.10-slim
 
-# Install DVC with Google Drive support
-RUN pip install --no-cache-dir dvc[gdrive]
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy repo in and install deps
-COPY . /workspace
+# Install Python packages
+RUN pip install --no-cache-dir \
+    numpy \
+    pandas \
+    matplotlib \
+    seaborn \
+    scikit-learn \
+    torch \
+    jupyter \
+    black \
+    flake8 \
+    pytest
+
+# Create a non-root user
+RUN useradd -m -s /bin/bash vscode
+USER vscode
+
+# Set working directory
 WORKDIR /workspace
-RUN pip install --no-cache-dir -r requirements.txt
+
+# Set Python path
+ENV PYTHONPATH=/workspace 
