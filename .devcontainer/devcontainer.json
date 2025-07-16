@@ -13,5 +13,6 @@
                 "ms-python.vscode-pylance"
             ]
         }
-    }
+    },
+    "postCreateCommand": "pip install --no-cache-dir -r requirements.txt"
 } 
